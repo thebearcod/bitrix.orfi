@@ -1,4 +1,4 @@
-.htaccess
+#.htaccess
 /bitrix
 /upload
 /htdocs
@@ -21,4 +21,3 @@ google*
 tags
 /test
 /local/config
-/local/templates/reinnolc/frontend/src/video
