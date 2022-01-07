@@ -1,11 +1,11 @@
 .htaccess
 /bitrix
 /upload
-/desktop_app
 /htdocs
 .nbproject
 .idea
 /*.txt
+!robots.txt
 /en
 /cn
 license_key.php
