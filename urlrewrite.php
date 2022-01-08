@@ -1,5 +1,13 @@
 <?php
 $arUrlRewrite=array (
+    13 =>
+        array (
+            'CONDITION' => '#^/news/([a-z-0-9_]+)/([a-z-0-9_]+)#',
+            'RULE' => 'SECTION_CODE=$1&CODE=$2',
+            'ID' => 'bitrix:news',
+            'PATH' => '/news/detail.php',
+            'SORT' => 100,
+        ),
   2 => 
   array (
     'CONDITION' => '#^/online/([\\.\\-0-9a-zA-Z]+)(/?)([^/]*)#',

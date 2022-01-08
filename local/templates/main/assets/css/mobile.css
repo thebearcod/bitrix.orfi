@@ -1,0 +1,216 @@
+.main{
+	margin:0;
+}
+.logo__img {
+    height: 35px;
+    margin-right: 10px;
+    margin-top: -2px;
+}
+.logo__text {
+    font-size: 12px;
+}
+.logo__text-big{
+	font-size: 14px;
+}
+.content h1 {
+	font-size: 20px;
+}
+.container {
+    width: auto;
+}
+.content.col-md-8{
+    padding-left: 15px;
+}
+.photo-card-modal img{
+	width: 100%;
+	margin-bottom:15px;
+}
+p.photo img {
+	width: 100%;
+}
+/*----head-banner & slider----*/
+.slider__item{
+	min-height: 200px;
+}
+.slider__item img{
+	visibility: hidden;
+}
+.slider__text {
+	top:20px;
+	width: calc(100% - 60px);
+}
+.slider__text h2, .head-banner__title{
+	font-size: 16px;
+}
+.slider__text h2 small{
+	color:#fff;
+	display: block;
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 5px;
+	text-transform: none;
+}
+.slider__text p, .head-banner__text{
+	color: #ddd;
+	font-size: 12px;
+}
+.slider .owl-dots {
+	margin: -40px 0 0 23px;
+}
+.header {
+	margin: 60px 0 20px 0;
+}
+.head-banner {
+	height:auto;
+	padding: 20px;
+}
+.logo__text {
+	margin: 0;
+}
+.cta-order-main {
+    background: url(/files/img/cta-bg.jpg) no-repeat;
+    background-size: cover;
+    padding: 30px 20px;
+    margin: 40px 0;
+}
+.cta-order__btn {
+    position: static;
+    display: block;
+    margin: 20px 15px 0 15px;
+}
+.mainabout{
+	padding: 10px;
+}
+.mainabout__video{
+    height: 160px;
+	margin: 0 -10px -10px -10px;
+}
+.mainother__title-mtop{
+	margin-top:30px;
+}
+.facts-block{
+	margin:0 0 15px 0;
+}
+.mainabout__textvideo:first-child{
+	margin-bottom: 30px;
+}
+.social.list-inline>li{
+	padding-right: 5px;
+	padding-left: 5px
+}
+.fb, .vk, .tw, .rss, .yt, .gp {
+    width: 26px;
+    height: 26px;
+    background-size: 26px;
+}
+.modalgeo ul{
+	margin-bottom:0;
+}
+.footer{
+	text-align:center;
+}
+.footer .text-right{
+	text-align: center;
+}
+.footer .divup{
+	position: static;
+	width: 100%;
+	z-index: 0;
+	display:block;
+	margin-top: 10px;
+}
+.footer .divup .up{
+	margin: auto;
+    float: none;
+}
+.gallery .gallery__images a:not(:first-of-type){
+	display: none;
+}
+.gallery .gallery__images a:first-of-type{
+	width:100%;
+}
+.gallery .gallery__images a:first-of-type img{
+	height: auto;
+	width: 100%;
+}
+.mainotzivi.owl-carousel .owl-item img{
+	width:40%;
+}
+.mainother .otziv .text-right{
+	text-align: left;
+}
+.aside{
+	padding-right: 15px;
+	margin-bottom: 20px;
+}
+.aside__menu{
+	margin: 0;
+}
+.btn-collapsemenu{
+	background-color: #eee;
+	border-radius: 0;
+	border:0;
+	text-align: left;
+}
+.btn-collapsemenu .fa{
+	margin-right: 10px;
+}
+
+/* Landing  */
+.landing .head-banner{
+	background: #001552;
+}
+.landing .head-banner__text{
+	margin-bottom: 30px;
+}
+.landing .head-banner__cnt{
+	width: 100%;
+}
+.accredit, .works, .contact{
+	margin: 40px -20px;
+	padding: 30px 20px;
+}
+.advant .media{
+	margin: 0 0 20px 0;
+}
+.advant .media .media-left{
+	padding-left: 0;
+	padding-right: 20px;
+}
+.accredit{
+    background: #efefef;
+}
+.accredit p{
+   font-size: 12px;
+}
+.accredit img{
+	text-align: left;
+	width: 100%;
+	height: auto;
+}
+.accredit .btn, .contact .btn{
+	margin-top: 20px;
+	display: block;
+}
+.stages__txt{
+	padding: 0;
+}
+.works__info {
+    position: static;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.owl-works .owl-nav{
+	text-align: center;
+}
+.checkbox_btn .btn{
+	display: block;
+	margin-bottom: 5px;
+	width:100%;
+}
+.checkbox_btn>.btn-group{
+	width:100%;
+}
+.modal-body .btn-close{
+	height: 40px;
+}

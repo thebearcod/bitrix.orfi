@@ -8,12 +8,12 @@ include_once "include/const.php";
 /**
  * Подключаем файл, куда необходимо складывать обработку событий
  */
-include_once "include/events.php";
+//include_once "include/events.php";
 
 /**
  * Подключаем файл, куда необходимо складывать обработку событий
  */
-include_once "include/functions.php";
+//include_once "include/functions.php";
 
 
 

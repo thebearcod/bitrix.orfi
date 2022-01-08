@@ -1,9 +1,9 @@
 <?
 $sSectionName = 'Главная';
 $arDirProperties = array(
-	'title' => 'Title',
-	'description' => 'Description',
-	'keywords' => 'Keywords',
+	'title' => 'Главная',
+	'description' => 'Главная',
+	'keywords' => 'Главная',
 	'robots' => 'index, follow'
 );
 ?>

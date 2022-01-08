@@ -1,6 +1,6 @@
 <?
 $arTemplate = array (
-  'NAME' => 'reinnolc',
+  'NAME' => 'main',
   'DESCRIPTION' => '',
   'SORT' => '',
   'TYPE' => '',
