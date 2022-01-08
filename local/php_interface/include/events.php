@@ -3,6 +3,22 @@
 /**
  * Необходимые обработки событий
  */
+
+
+AddEventHandler("main", "OnEndBufferContent", "deleteKernelCss");
+function deleteKernelCss(&$content) {
+    global $USER, $APPLICATION;
+    if(strpos($APPLICATION->GetCurDir(), "/bitrix/")!==false) return;
+    if($APPLICATION->GetProperty("save_kernel") == "Y") return;
+    $arPatternsToRemove = Array(
+        '/<link.+?href=".+?bitrix\/css\/main\/bootstrap.css[^"]+"[^>]+>/',
+        '/<link.+?href=".+?bitrix\/css\/main\/bootstrap.min.css[^"]+"[^>]+>/',
+    );
+    $content = preg_replace($arPatternsToRemove, "", $content);
+    $content = preg_replace("/\n{2,}/", "\n\n", $content);
+}
+
+/*
 AddEventHandler("main", 'OnAfterFileSave', 'OnAfterFileSave');
 AddEventHandler("main", 'OnFileSave', 'OnFileSave');
 AddEventHandler("iblock", "OnBeforeIBlockElementAdd", "OnBeforeIBlockElementUpdateAndAdd");
@@ -66,6 +82,7 @@ function OnBeforeIBlockElementUpdateAndAdd(&$arFields)
                  $el["ID"] != null
                  так что здесь((int)$el['ID'] != $id) -- будет true все равно и эта строчка пригодна
                  для обоих событий - "OnBeforeIBlockElementAdd" и "OnBeforeIBlockElementUpdate"*/
+/*
                 if ((int)$el['ID'] != $id)// если это не изменяемый элемент
                 {
                     CIBlockElement::SetPropertyValues(
@@ -77,4 +94,4 @@ function OnBeforeIBlockElementUpdateAndAdd(&$arFields)
             }
         }
     }
-}
+}*/

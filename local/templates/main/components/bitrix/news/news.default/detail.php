@@ -11,12 +11,12 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
-print_r(__FILE__);
+//print_r(__FILE__);
 ?>
 
-<?/*$ElementID = $APPLICATION->IncludeComponent(
+<?$ElementID = $APPLICATION->IncludeComponent(
 	"bitrix:news.detail",
-	"",
+	"flat",
 	Array(
 		"DISPLAY_DATE" => $arParams["DISPLAY_DATE"],
 		"DISPLAY_NAME" => $arParams["DISPLAY_NAME"],
@@ -159,4 +159,4 @@ print_r(__FILE__);
 	),
 	$component
 );?>
-<?endif */?>
+<?endif ?>

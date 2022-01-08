@@ -85,3 +85,7 @@ define('IBLOCK_DOCUMENTS', 16);
 
 // Инфоблок с реалзиованными проектами
 define('IBLOCK_PROJECTS', 17);
+
+define('URL', strtolower($_SERVER["REQUEST_URI"]));
+define('HOST', 'https://'.$_SERVER['HTTP_HOST']);
+

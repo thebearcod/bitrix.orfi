@@ -94,3 +94,15 @@ function resizeImage(&$arFile, $width, $height)
         )
     );
 }
+
+
+/**
+ * Возвращает нужную позицию в URL
+ * @param $url
+ * @param $position
+ * @return mixed|string
+ */
+function slashPosition($url, $position) {
+    $arr = explode("/", $url);
+    return $arr[$position];
+};

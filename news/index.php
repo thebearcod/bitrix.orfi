@@ -1,14 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Новости");
+//$APPLICATION->SetTitle("Новости");
 ?>
-    <div class="container">
-        <div class="row">
-            <div class="main">
 
-                <div class="row">
-
-                    <div class="content col-sm-12">
 
 
 <?$APPLICATION->IncludeComponent(
@@ -65,14 +59,14 @@ $APPLICATION->SetTitle("Новости");
 		"SEF_MODE" => "Y",
         "SEF_FOLDER" => "/news/",
         "SEF_URL_TEMPLATES" => Array(
-            "detail" => "#SECTION_CODE_PATH#/#ELEMENT_CODE#/",
+            "detail" => "#ELEMENT_CODE#/",
             "news" => "",
-            "section" => "/#SECTION_CODE#/",
+            "section" => "",
         ),
 		"SET_LAST_MODIFIED" => "N",
-		"SET_STATUS_404" => "N",
+		"SET_STATUS_404" => "Y",
 		"SET_TITLE" => "Y",
-		"SHOW_404" => "N",
+		"SHOW_404" => "Y",
 		"SORT_BY1" => "ACTIVE_FROM",
 		"SORT_BY2" => "SORT",
 		"SORT_ORDER1" => "DESC",
@@ -93,10 +87,6 @@ $APPLICATION->SetTitle("Новости");
 );?>
 
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

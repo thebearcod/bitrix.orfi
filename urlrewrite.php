@@ -1,11 +1,19 @@
 <?php
 $arUrlRewrite=array (
-    13 =>
+    /*13 =>
         array (
             'CONDITION' => '#^/news/([a-z-0-9_]+)/([a-z-0-9_]+)#',
             'RULE' => 'SECTION_CODE=$1&CODE=$2',
             'ID' => 'bitrix:news',
             'PATH' => '/news/detail.php',
+            'SORT' => 100,
+        ),*/
+    14 =>
+        array (
+            'CONDITION' => '#^/news/#',
+            'RULE' => '',
+            'ID' => 'bitrix:news',
+            'PATH' => '/news/index.php',
             'SORT' => 100,
         ),
   2 => 

@@ -3,7 +3,11 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
 use Bitrix\Main\Page\Asset;
 ?>
 
-
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
     <footer class="footer">
     <div class="container">
         <div class="row">
@@ -38,6 +42,34 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/assets/js/jquery.fancybox.min.j
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/assets/js/slideout.min.js");
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/assets/js/add.js");
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/assets/js/main.js");
+
+$APPLICATION->IncludeComponent(
+    "bitrix:main.include",
+    "",
+    array(
+        "AREA_FILE_SHOW" => "file",
+        "PATH" => SITE_DIR . "include/modal-footer.php"
+    ),
+    false
+);
+
+$APPLICATION->IncludeComponent(
+    "bitrix:main.include",
+    "",
+    array(
+        "AREA_FILE_SHOW" => "file",
+        "PATH" => SITE_DIR . "include/scripts-footer.php"
+    ),
+    false
+);
+
+$APPLICATION->IncludeComponent("bitrix:main.include","",
+    array(
+        "AREA_FILE_SHOW" => "file",
+        "PATH" => SITE_DIR . "include/mobilenav.php"
+    ),
+    false
+);
 
 
 ?>

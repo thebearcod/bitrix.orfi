@@ -11,7 +11,7 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
-print_r(__FILE__);
+//print_r(__FILE__);
 
 ?>
 

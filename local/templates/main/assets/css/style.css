@@ -11,11 +11,11 @@ body {
     color: #000;
     font-family: Arial, Helvetica, Verdana, sans-serif;
     font-size: 12px;
-    /*background-image: url("/files/img/ny_bg2017.jpg");*/
+    /*background-image: url("../img/ny_bg2017.jpg");*/
     background-repeat: no-repeat;
     background-position: top center;
     background-color: #09c;
-    /*background: url("/files/img/ny_bg2017.jpg") no-repeat top center, #09c;*/
+    /*background: url("../img/ny_bg2017.jpg") no-repeat top center, #09c;*/
     /*background: #09c;*/
     width: 100%;
     height: 100%;
@@ -474,7 +474,7 @@ ol.list-num > li:before {
     font-size: 14px;
     text-align: center;
     line-height: 24px;
-    background: url(/files/img/check.png) no-repeat center top;
+    background: url(../img/check.png) no-repeat center top;
     padding-top: 80px;
 }
 
@@ -549,23 +549,23 @@ ol.list-num > li:before {
 }
 
 .gp {
-    background-image: url(/files/svg/google-plus.svg);
+    background-image: url(../img/svg/google-plus.svg);
 }
 
 .fb {
-    background-image: url(/files/svg/facebook.svg);
+    background-image: url(../img/svg/facebook.svg);
 }
 
 .vk {
-    background-image: url(/files/svg/vk.svg);
+    background-image: url(../img/svg/vk.svg);
 }
 
 .tw {
-    background-image: url(/files/svg/twitter.svg);
+    background-image: url(../img/svg/twitter.svg);
 }
 
 .yt {
-    background-image: url(/files/svg/youtube.svg);
+    background-image: url(../img/svg/youtube.svg);
 }
 
 /*----head-banner & slider----*/
@@ -656,83 +656,83 @@ ol.list-num > li:before {
 }
 
 #headernav404 {
-    background: url(/files/img/head-banner/bnr404.jpg) no-repeat 0 0;
+    background: url(../img/head-banner/bnr404.jpg) no-repeat 0 0;
 }
 
 #headernavproekt {
-    background: url(/files/img/head-banner/bnrproekt.jpg) no-repeat 0 0;
+    background: url(../img/head-banner/bnrproekt.jpg) no-repeat 0 0;
 }
 
 #headernavspecocenka {
-    background: url(/files/img/head-banner/bnrspecocenka.jpg) no-repeat 0 0;
+    background: url(../img/head-banner/bnrspecocenka.jpg) no-repeat 0 0;
 }
 
 #headernavnexppb {
-    background: url(/files/img/head-banner/bnrnexppb.jpg) no-repeat 0 0;
+    background: url(../img/head-banner/bnrnexppb.jpg) no-repeat 0 0;
 }
 
 #headernavexpb {
-    background: url(/files/img/head-banner/bnrexpb.jpg) no-repeat 0 0;
+    background: url(../img/head-banner/bnrexpb.jpg) no-repeat 0 0;
 }
 
 #headernavexpbtu {
-    background: url(/files/img/head-banner/bnrexpbtu.jpg) no-repeat 0 0;
+    background: url(../img/head-banner/bnrexpbtu.jpg) no-repeat 0 0;
 }
 
 #headernavexpbpd {
-    background: url(/files/img/head-banner/bnrexpbpd.jpg) no-repeat 0 0;
+    background: url(../img/head-banner/bnrexpbpd.jpg) no-repeat 0 0;
 }
 
 #headernavexpbgd {
-    background: url(/files/img/head-banner/bnrexpbgd.jpg) no-repeat 0 0;
+    background: url(../img/head-banner/bnrexpbgd.jpg) no-repeat 0 0;
 }
 
 #headernavgeodez {
-    background: url(/files/img/head-banner/bnrgeodez.jpg) no-repeat 0 0;
+    background: url(../img/head-banner/bnrgeodez.jpg) no-repeat 0 0;
 }
 
 #headernavgeofiz {
-    background: url(/files/img/head-banner/bnrgeofiz.jpg) no-repeat 0 0;
+    background: url(../img/head-banner/bnrgeofiz.jpg) no-repeat 0 0;
 }
 
 #headernavregopo {
-    background: url(/files/img/head-banner/bnrregopo.jpg) no-repeat 0 0;
+    background: url(../img/head-banner/bnrregopo.jpg) no-repeat 0 0;
 }
 
 #headernavekolog {
-    background: url(/files/img/head-banner/bnrekolog.jpg) no-repeat 0 0;
+    background: url(../img/head-banner/bnrekolog.jpg) no-repeat 0 0;
 }
 
 #headernavuchcenter {
-    background: url(/files/img/head-banner/bnruchcntr.jpg) no-repeat 0 0;
+    background: url(../img/head-banner/bnruchcntr.jpg) no-repeat 0 0;
 }
 
 #headernavprombez {
-    background: url(/files/img/head-banner/bnrprombez.jpg) no-repeat 0 0;
+    background: url(../img/head-banner/bnrprombez.jpg) no-repeat 0 0;
 }
 
 #headernavfaq {
-    background: url(/files/img/head-banner/bnrfaq.jpg) no-repeat 0 0;
+    background: url(../img/head-banner/bnrfaq.jpg) no-repeat 0 0;
 }
 
 #headernavlaw {
-    background: url(/files/img/head-banner/bnrlaw.jpg) no-repeat 0 0;
+    background: url(../img/head-banner/bnrlaw.jpg) no-repeat 0 0;
 }
 
 #headernavods {
-    background: url(/files/img/head-banner/bnrods.jpg) no-repeat 0 0;
+    background: url(../img/head-banner/bnrods.jpg) no-repeat 0 0;
 }
 
 #headernavvictory {
-    background: url(/files/img/head-banner/bnrvictory.jpg) no-repeat 0 0;
+    background: url(../img/head-banner/bnrvictory.jpg) no-repeat 0 0;
 }
 
 #headerservices {
-    background: url(/files/img/head-banner/bnrservices.jpg) no-repeat 0 0;
+    background: url(../img/head-banner/bnrservices.jpg) no-repeat 0 0;
 }
 
 #headerwork {
-    background: url(/files/img/head-banner/bnrservices.jpg) no-repeat 0 0;
+    background: url(../img/head-banner/bnrservices.jpg) no-repeat 0 0;
 }
 
 /*main & aside & content*/
@@ -971,7 +971,7 @@ img.media-object {
 
 .content .list-work-regions {
     padding: 0 0 50px 0;
-    background: url(/files/img/map.png) no-repeat center center;
+    background: url(../img/map.png) no-repeat center center;
     background-size: contain;
 }
 
@@ -1005,7 +1005,7 @@ img.media-object {
 }
 
 .cta-order-main {
-    background: url(/files/img/cta-bg.jpg) no-repeat;
+    background: url(../img/cta-bg.jpg) no-repeat;
     background-size: cover;
     padding: 30px 50px;
     margin: 40px 0;
@@ -1504,23 +1504,23 @@ a.docs-card:hover, a.docs-card:focus {
 }
 
 .mainservices__item-ne {
-    background-image: url(/files/img/mainnexppb_light.jpg);
+    background-image: url(../img/mainnexppb_light.jpg);
 }
 
 .mainservices__item-pb {
-    background-image: url(/files/img/mainexpb_light.jpg);
+    background-image: url(../img/mainexpb_light.jpg);
 }
 
 .mainservices__item-proekt {
-    background-image: url(/files/img/mainproekt_light.jpg);
+    background-image: url(../img/mainproekt_light.jpg);
 }
 
 .mainservices__item-uc {
-    background-image: url(/files/img/mainuchcentr_light.jpg);
+    background-image: url(../img/mainuchcentr_light.jpg);
 }
 
 .mainservices__item-other {
-    background-image: url(/files/img/maingeodez_light.jpg);
+    background-image: url(../img/maingeodez_light.jpg);
 }
 
 .mainservices__title {
@@ -1566,7 +1566,7 @@ a.mainservices__title:hover, a.mainservices__title:focus {
 }
 
 .mainabout__video {
-    background: url(/files/img/mainaboutbg.jpg) no-repeat center;
+    background: url(../img/mainaboutbg.jpg) no-repeat center;
     height: 300px;
     max-height: 300px;
     background-size: cover;
@@ -1820,7 +1820,7 @@ a.mainservices__title:hover, a.mainservices__title:focus {
 }
 
 .secondnav:after {
-    background: url(/files/img/submenu.gif) no-repeat 0px 0px;
+    background: url(../img/submenu.gif) no-repeat 0px 0px;
     height: 15px;
     width: 9px;
     left: 10px;
@@ -1938,7 +1938,7 @@ a.mainservices__title:hover, a.mainservices__title:focus {
 .landing .head-banner {
     height: 350px;
     position: relative;
-    background: url(/files/img/landing/banner-bg.png) no-repeat bottom right, #001552;
+    background: url(../img/landing/banner-bg.png) no-repeat bottom right, #001552;
 }
 
 .landing .head-banner__title {
@@ -1969,7 +1969,7 @@ a.mainservices__title:hover, a.mainservices__title:focus {
 
 .accredit {
     padding: 30px;
-    background: url(/files/img/landing/accredit-bg.jpg) no-repeat center;
+    background: url(../img/landing/accredit-bg.jpg) no-repeat center;
     background-size: cover;
     margin: 40px 0;
 }
@@ -2049,7 +2049,7 @@ a.mainservices__title:hover, a.mainservices__title:focus {
 .works {
     margin: 40px 0;
     padding: 30px;
-    background: url(/files/img/landing/works-bg.jpg) no-repeat center;
+    background: url(../img/landing/works-bg.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -2518,4 +2518,8 @@ a.mainservices__title:hover, a.mainservices__title:focus {
     justify-content: space-between;
     flex-wrap: wrap;
 
+}
+
+.d-flex {
+    display: flex;
 }

@@ -16,8 +16,8 @@ var oren = "oren|51.825178,55.110888|Оренбург, пр. Дзержинск�
     irk = "irk|no|Иркутск|+7(3952)64-07-74|irk@orfi.ru",
     surgut = "surgut|no|Сургут|+7(3462)44-69-53|surgut@orfi.ru",
     ekb = "ekb|56.8360463744364,60.614739432540865|Екатеринбург, ул. Красноармейская,10, БЦ Антей|+7(343)319-51-79|ekb@orfi.ru",
-    kurgan = "kurgan|no|Курган|+7(3532)30-56-30|kurgan@orfi.ru"
-orel = "orel|no|Орел|+7(4862)63-01-47|orel@orfi.ru",
+    kurgan = "kurgan|no|Курган|+7(3532)30-56-30|kurgan@orfi.ru",
+    orel = "orel|no|Орел|+7(4862)63-01-47|orel@orfi.ru",
     perm = "perm|no|Пермь|+7(342)204-13-12|perm@orfi.ru",
     krasnodar = "krasnodar|45.01828783, 39.02825294|Краснодар, ул. Димитрова 164/1 оф. 211|+7(928)210-11-04|krasnodar@orfi.ru",
     syktyvkar = "syktyvkar|61.65688643, 50.82012867|Сыктывкар, ул. Гаражная, 9, БЦ Союз|+7(8212)72-28-37|syktyvkar@orfi.ru",
@@ -36,9 +36,9 @@ orel = "orel|no|Орел|+7(4862)63-01-47|orel@orfi.ru",
     voronezh = "voronezh|51.67169679, 39.20330169|Воронеж, ул. Комиссаржевской, 10|+7(473)229-33-47|voronezh@orfi.ru",
     magadan = "magadan|59.56755911, 150.81152852|Магадан, ул. Пролетарская, 11, АТЦ М-Сити|+7(4132)21-00-85|magadan@orfi.ru",
     krym = "krym|45.05019456, 35.37279878|Феодосия, бул. Старшинова, д. 27|+7(987)847-92-89|krym@orfi.ru",
-    spb = "spb|no|Санкт-Петербург|+7(812)939-11-61|spb@orfi.ru";
-vl = "vl|43.1195,131.8866|Владивосток, Океанский пр-кт, 17|+7(423)424-04-38|vl@orfi.ru";
-habarovsk = "habarovsk|48.4813,135.0840|Хабаровск, ул. Постышева, 22А|+7(421)734-01-98|habarovsk@orfi.ru";
+    spb = "spb|no|Санкт-Петербург|+7(812)939-11-61|spb@orfi.ru",
+    vl = "vl|43.1195,131.8866|Владивосток, Океанский пр-кт, 17|+7(423)424-04-38|vl@orfi.ru",
+    habarovsk = "habarovsk|48.4813,135.0840|Хабаровск, ул. Постышева, 22А|+7(421)734-01-98|habarovsk@orfi.ru";
 
 //Основная функция записи данных о городе в куки
 var geo = function () {
@@ -81,8 +81,8 @@ var init = function () {
     var geolocation = ymaps.geolocation,
         a = [geolocation.region],
         city = [geolocation.city];
-    // console.log(a);
-    // console.log(city);
+     console.log(a);
+     console.log(city);
     if (a == 'Оренбургская область' && city == 'Оренбург') {
         c = oren;
     } else if (a == 'Москва и Московская область' || city == 'Москва') {
@@ -335,15 +335,15 @@ $('#contact input[type=file]').change(function () {
     //console.log(files);
     $('#contact .list-files').text('');
     $.each(files, function (key, value) {
-        $('#contact .list-files').append('<span>'+(key+1)+'. '+value['name']+'</span><br>');
+        $('#contact .list-files').append('<span>' + (key + 1) + '. ' + value['name'] + '</span><br>');
     });
 });
 
 //$(".send_services").on("click", function () {
 $(document).on("submit", "#contact", function (e) {
-	e.preventDefault();
+    e.preventDefault();
     $('#contact input[name=namePage]').val($('h1').text());
-	let $form = $(this);
+    let $form = $(this);
 
     let $name = $form.find("input[name=name]");
     let $phone = $form.find("input[name=phone]");
@@ -378,7 +378,7 @@ $(document).on("submit", "#contact", function (e) {
         });
         // заполним массив $_POST
         let formArray = $form.serializeArray();
-        $.each(formArray,function(index, obj){
+        $.each(formArray, function (index, obj) {
             postData.append(obj.name, obj.value);
         });
 
@@ -403,9 +403,9 @@ $(document).on("submit", "#contact", function (e) {
                             $("#contact").prev("p.send-success").remove();
                         }, 4000);
                     });
-					// тут код метрики
-					//yaCounter11524657.reachGoal('usluga'); return true;
-					if (typeof yaCounter11524657 !== "undefined") yaCounter11524657.reachGoal('usluga');
+                    // тут код метрики
+                    //yaCounter11524657.reachGoal('usluga'); return true;
+                    if (typeof yaCounter11524657 !== "undefined") yaCounter11524657.reachGoal('usluga');
                 } else $("#contact span.errors").text("Ошибка при отправки формы");
             },
             error: function (jqXHR, exception) {
@@ -601,26 +601,30 @@ $("#send_otzyv").on("click", function () {
 });
 
 //Mobile slidemenu
-let $panel = document.getElementById('panel');
-if (typeof($panel) != 'undefined' && $panel != null) {
-    var slideout = new Slideout({
-        'panel': document.getElementById('panel'),
-        'menu': document.getElementById('menu'),
-        'padding': 250,
-        'tolerance': 50,
-        'touch': false,
-        'side': 'right',
-    });
-
-// Toggle button for mobile slidemenu
-    let $toggleButton = document.querySelector('.toggle-button');
-    if (typeof ($toggleButton) != 'undefined' && $toggleButton != null) {
-        $toggleButton.addEventListener('click', function () {
-            slideout.toggle();
+$(document).ready(function () {
+    let $panel = document.getElementById('panel');
+    if (typeof ($panel) != 'undefined' && $panel != null) {
+        var slideout = new Slideout({
+            'panel': document.getElementById('panel'),
+            'menu': document.getElementById('menu'),
+            'padding': 250,
+            'tolerance': 50,
+            'touch': false,
+            'side': 'right',
         });
+
+        // Toggle button for mobile slidemenu
+        let $toggleButton = document.querySelector('.toggle-button');
+        if (typeof ($toggleButton) != 'undefined' && $toggleButton != null) {
+            $toggleButton.addEventListener('click', function () {
+                slideout.toggle();
+            });
+        }
+
     }
 
-}
+});
+
 //Фильтр на странице выполненных работ
 function filter_work() {
     var sel = document.getElementById('region'),
@@ -635,4 +639,17 @@ function filter_work() {
             $("#result").append(html); //и выводим ответ php скрипта
         }
     });
+}
+
+/*Отображение скидки до определенной даты*/
+function sale(n) {
+    var now = new Date;
+    var n = new Date(n);
+    var sale = document.getElementsByClassName('sale');
+    if (sale.length != 0) {
+        if (now < n) {
+            sale[0].style.display = 'block';
+            sale[1].style.display = 'block'
+        }
+    }
 }
