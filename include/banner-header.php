@@ -1,12 +1,19 @@
-<?php if ($APPLICATION->GetCurPage(false) != "/"): ?>
+<?php
+global $STATUS_404;
+$arrExcludeShowBanner = [];
+//var_dump($arParams);
+//if (ERROR_404 == 'Y')
+//    return '';
+
+if ($APPLICATION->GetCurPage(false) != "/"): ?>
     <div class="head-banner" id="negos-ekspertiza">
 		<div class="head-banner__cnt">
-			<p class="head-banner__title">Услуги компании</p>
-			<p class="head-banner__text">Комплексный подход к решению ваших задач</p>
+            <p class="head-banner__title"><?$APPLICATION->ShowProperty('BANNER_TITLE')?></p>
+            <p class="head-banner__text"><?$APPLICATION->ShowProperty('BANNER_TEXT')?></p>
 		</div>
 	</div>
 <?php else: ?>
-<div class="slider owl-carousel">
+    <div class="slider owl-carousel">
     <div class="item">
         <div class="slider__item">
             <img class="slider__img" alt="НТЦ Промбезопасность"

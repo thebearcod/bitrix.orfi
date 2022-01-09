@@ -1,8 +1,10 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-//$APPLICATION->SetTitle("Новости");
+//print_r(__FILE__);
+global $APPLICATION;
+$APPLICATION->SetDirProperty('BANNER_TITLE','Пресс-центр');
+$APPLICATION->SetDirProperty('BANNER_TEXT','Актуальные новости и события');
 ?>
-
 
 
 <?$APPLICATION->IncludeComponent(
@@ -85,8 +87,6 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
             "SECTION_ID"=>"SECTION_ID")
 	)
 );?>
-
-
 
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

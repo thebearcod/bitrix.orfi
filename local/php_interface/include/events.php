@@ -4,7 +4,7 @@
  * Необходимые обработки событий
  */
 
-
+/*
 AddEventHandler("main", "OnEndBufferContent", "deleteKernelCss");
 function deleteKernelCss(&$content) {
     global $USER, $APPLICATION;
@@ -16,7 +16,7 @@ function deleteKernelCss(&$content) {
     );
     $content = preg_replace($arPatternsToRemove, "", $content);
     $content = preg_replace("/\n{2,}/", "\n\n", $content);
-}
+}*/
 
 /*
 AddEventHandler("main", 'OnAfterFileSave', 'OnAfterFileSave');
