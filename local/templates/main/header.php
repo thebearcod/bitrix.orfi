@@ -5,6 +5,23 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 }
 
 use Bitrix\Main\Page\Asset;
+global $APPLICATION;
+
+$arrPagesWide = [
+    "/",
+    "/services/",
+    "/victory/",
+    "/404/"
+];
+$isSidebar = true;
+$cntCol = 8;
+
+if (in_array($APPLICATION->GetCurPage(false),$arrPagesWide)):
+    $isSidebar = false;
+    $cntCol = 12;
+endif;
+
+
 
 ?>
 <!doctype html>
@@ -65,12 +82,10 @@ use Bitrix\Main\Page\Asset;
     $APPLICATION->ShowHead(); ?>
 </head>
 <body>
+<?php $APPLICATION->ShowPanel(); ?>
 <!-- BEGIN content -->
 <div id="panel">
-
     <header class="header">
-        <?
-        $APPLICATION->ShowPanel(); ?>
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 col-xs-10">
@@ -81,12 +96,9 @@ use Bitrix\Main\Page\Asset;
                         $logo = '<span class="logo__text-small">Научно-технический центр</span>	<span class="logo__text-big">Промбезопасность</span>';
                         if ($APPLICATION->GetCurPage(false) === '/'):?>
                             <h1 class="logo__text"><?= $logo ?></h1>
-                        <?php
-                        else: ?>
+                        <?php else: ?>
                             <div class="logo__text"><?= $logo ?></div>
-                        <?php
-                        endif;
-                        ?>
+                        <?php endif; ?>
                     </a>
                 </div>
                 <div class="mobile-menu">
@@ -153,8 +165,7 @@ use Bitrix\Main\Page\Asset;
     <div class="container">
         <div class="row">
             <main class="main">
-                <?php
-                $APPLICATION->IncludeComponent(
+                <?php $APPLICATION->IncludeComponent(
                     "bitrix:main.include",
                     "",
                     array(
@@ -164,5 +175,16 @@ use Bitrix\Main\Page\Asset;
                     false
                 ); ?>
                 <div class="row">
-                    <div class="content col-sm-12">
+                    <?php if ($isSidebar):
+                        $APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            array(
+                                "AREA_FILE_SHOW" => "file",
+                                "PATH" => SITE_DIR . "include/aside.php"
+                            ),
+                            false
+                        );
+                    endif;?>
+                    <div class="content col-sm-<?=$cntCol?>">
 

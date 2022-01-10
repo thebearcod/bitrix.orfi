@@ -1385,6 +1385,17 @@ a.docs-card:hover, a.docs-card:focus {
     width: 200px;
 }
 
+.faq__file a {
+    display: flex;
+    align-items: center;
+
+    font-weight: bold;
+}
+
+.faq__file i {
+    margin-right: 15px;
+}
+
 .faq__answer {
     border-left: 3px solid #dedede;
     padding-left: 10px;

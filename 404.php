@@ -3,11 +3,9 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/include/urlrewrite.
 
 CHTTP::SetStatus("404 Not Found");
 @define("ERROR_404","Y");
-$STATUS_404 = true;
-$arParams['404'] = true;
+
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
-//$APPLICATION->SetDirProperty("BANNER_TITLE", "404");
 $APPLICATION->SetPageProperty("BANNER_TITLE", "404");
 $APPLICATION->SetPageProperty("BANNER_TEXT", "Страница не найдена");
 $APPLICATION->SetPageProperty("title", "Страница не найдена");

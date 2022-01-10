@@ -7,6 +7,9 @@
 // ID инфоблока Новости
 define('IBLOCK_NEWS', 1);
 
+// ID инфоблока Письма из РТН
+define('IBLOCK_LETTERS', 2);
+
 // ID инфоблока с языковыми meta-тегами доя SEO
 define('IBLOCK_SEO', 4);
 
@@ -85,7 +88,3 @@ define('IBLOCK_DOCUMENTS', 16);
 
 // Инфоблок с реалзиованными проектами
 define('IBLOCK_PROJECTS', 17);
-
-define('URL', strtolower($_SERVER["REQUEST_URI"]));
-define('HOST', 'https://'.$_SERVER['HTTP_HOST']);
-

@@ -2,10 +2,8 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 //print_r(__FILE__);
 global $APPLICATION;
-$APPLICATION->SetDirProperty('BANNER_TITLE','Пресс-центр');
-$APPLICATION->SetDirProperty('BANNER_TEXT','Актуальные новости и события');
-?>
 
+?>
 
 <?$APPLICATION->IncludeComponent(
 	"bitrix:news",

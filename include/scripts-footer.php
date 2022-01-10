@@ -5,7 +5,10 @@
 </script>
 
 <?php
-if (URL == "/") { ?>
+$url = strtolower($_SERVER["REQUEST_URI"]);
+$host = 'https://'.$_SERVER['HTTP_HOST'];
+
+if ($url == "/") { ?>
     <script>
         $(".slider").owlCarousel({
             animateOut: "fadeOut",
@@ -64,7 +67,7 @@ if (URL == "/") { ?>
     </script>
     <?
 }
-if (slashPosition(URL, 1) == "work" || slashPosition(URL, 1) == "services") {
+if (slashPosition($url, 1) == "work" || slashPosition($url, 1) == "services") {
     ?>
     <script>
         if ($('.reviews-list').length > 0) {
@@ -99,15 +102,15 @@ if (slashPosition(URL, 1) == "work" || slashPosition(URL, 1) == "services") {
     </script>
     <?
 }
-if (slashPosition(URL, 1) == "negosudarstvennaya-ekspertiza") {
+if (slashPosition($url, 1) == "negosudarstvennaya-ekspertiza") {
     echo '<script src="/files/js/landing.js"></script>';
 }
-if (slashPosition(URL, 2) == "otzivi") {
+if (slashPosition($url, 2) == "otzivi") {
     echo '<script src="/files/js/loadotzivi.js"></script>';
 } ?>
 <?php
 //подключаем виджет bitrix24 только на проде
-if (HOST == "https://orfi.ru"): ?>
+if ($host == "https://orfi.ru"): ?>
     <script>
         //виджет
         (function (w, d, u) {

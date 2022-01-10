@@ -6,7 +6,7 @@ $arrExcludeShowBanner = [];
 //    return '';
 
 if ($APPLICATION->GetCurPage(false) != "/"): ?>
-    <div class="head-banner" id="negos-ekspertiza">
+    <div class="head-banner">
 		<div class="head-banner__cnt">
             <p class="head-banner__title"><?$APPLICATION->ShowProperty('BANNER_TITLE')?></p>
             <p class="head-banner__text"><?$APPLICATION->ShowProperty('BANNER_TEXT')?></p>

@@ -106,3 +106,18 @@ function slashPosition($url, $position) {
     $arr = explode("/", $url);
     return $arr[$position];
 };
+
+function getFullUrl() {
+    return 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+}
+
+
+/**
+ * Дебаг
+ * @param $data
+ */
+function pr($data) {
+    echo '<pre>';
+    print_r($data);
+    echo '</pre>';
+}
