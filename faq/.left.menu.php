@@ -2,6 +2,13 @@
 
 $aMenuLinks = array(
     array(
+        "Письма из РТН",
+        "gosnadzor/",
+        array(),
+        array(),
+        ""
+    ),
+    array(
         "Промышленная безопасность",
         "pb/",
         array(),
@@ -32,13 +39,6 @@ $aMenuLinks = array(
     array(
         "Другие вопросы",
         "other/",
-        array(),
-        array(),
-        ""
-    ),
-    array(
-        "РТН",
-        "letters/",
         array(),
         array(),
         ""

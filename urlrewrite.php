@@ -58,10 +58,10 @@ $arUrlRewrite=array (
         ),
     15 =>
         array (
-            'CONDITION' => '#^/faq/letters/#',
+            'CONDITION' => '#^/faq/gosnadzor/#',
             'RULE' => '',
             'ID' => 'bitrix:news',
-            'PATH' => '/faq/letters/index.php',
+            'PATH' => '/faq/gosnadzor/index.php',
             'SORT' => 100,
         ),
     5 =>

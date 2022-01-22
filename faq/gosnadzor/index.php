@@ -63,7 +63,7 @@ $APPLICATION->SetTitle("Title");
         "PAGER_TITLE" => "Вопросы",
         "PREVIEW_TRUNCATE_LEN" => "",
         "SEF_MODE" => "Y",
-        "SEF_FOLDER" => "/faq/letters/",
+        "SEF_FOLDER" => "/faq/gosnadzor/",
         "SEF_URL_TEMPLATES" => Array(
             "detail" => "#ELEMENT_CODE#/",
             "news" => "",
